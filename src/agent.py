@@ -15,7 +15,7 @@ from livekit.agents import (
     inference,
     room_io,
 )
-from livekit.plugins import ai_coustics, silero, google
+from livekit.plugins import ai_coustics, google
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
 from livekit.plugins import speechmatics
 from livekit.plugins.speechmatics import TurnDetectionMode, SpeakerIdentifier
