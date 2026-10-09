@@ -1,0 +1,5 @@
+livekit-agents
+livekit-plugins-google
+livekit-plugins-ai-coustics
+python-dotenv
+playwright
