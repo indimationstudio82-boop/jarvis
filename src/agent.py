@@ -1,5 +1,6 @@
 import logging
 import textwrap
+import gc
 
 from dotenv import load_dotenv
 from livekit.agents import (
@@ -95,6 +96,9 @@ server = AgentServer()
 
 @server.rtc_session(agent_name="my-agent")
 async def my_agent(ctx: JobContext):
+    # Free up memory before starting session
+    gc.collect()
+
     ctx.log_context_fields = {
         "room": ctx.room.name,
         "worker_pid": ctx.proc.pid if hasattr(ctx, "proc") else 0,
