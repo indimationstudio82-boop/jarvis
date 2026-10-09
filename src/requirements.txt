@@ -4,3 +4,5 @@ livekit-plugins-ai-coustics
 livekit-plugins-silero
 python-dotenv
 playwright
+fastapi
+uvicorn
