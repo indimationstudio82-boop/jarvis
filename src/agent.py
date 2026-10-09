@@ -16,9 +16,6 @@ from livekit.agents import (
     room_io,
 )
 from livekit.plugins import ai_coustics, google
-from livekit.plugins.turn_detector.multilingual import MultilingualModel
-from livekit.plugins import speechmatics
-from livekit.plugins.speechmatics import TurnDetectionMode, SpeakerIdentifier
 
 from browser import close_browser
 from browser_tools import BROWSER_TOOLS
