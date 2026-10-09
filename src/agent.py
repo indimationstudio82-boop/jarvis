@@ -30,9 +30,9 @@ load_dotenv(".env.local")
 class Assistant(Agent):
     def __init__(self) -> None:
         super().__init__(
-            # Realtime model setup optimized for Jarvis persona
+            # Realtime model setup fixed with supported model name
             llm=google.beta.realtime.RealtimeModel(
-                model="gemini-3.1-flash-live-preview",
+                model="gemini-2.0-flash-exp",
                 voice="Puck",
                 language="en-IN",
             ),
